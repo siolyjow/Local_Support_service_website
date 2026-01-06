@@ -14,8 +14,8 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.8;
-            color: #2a2a2a;
-            background: #393939;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             padding: 20px;
         }
@@ -23,14 +23,14 @@
         .container {
             max-width: 1000px;
             margin: 0 auto;
-            background: #eaeaea;
+            background: white;
             border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
             overflow: hidden;
         }
 
         header {
-            background: linear-gradient(135deg, #4a4a4a 0%, #2a2a2a 100%);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             padding: 40px;
             text-align: center;
@@ -72,7 +72,7 @@
 
         .lang-toggle:hover {
             background: white;
-            color: #2a2a2a;
+            color: #667eea;
             transform: translateY(-2px);
         }
 
@@ -81,50 +81,38 @@
         }
 
         .notice {
-            background: #d4d4d4;
-            border-left: 4px solid #ff9800;
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
             padding: 20px;
             margin-bottom: 30px;
             border-radius: 5px;
-            color: #2a2a2a;
         }
 
         .service-section {
             margin-bottom: 40px;
             padding: 25px;
-            background: #f5f5f5;
+            background: #f8f9fa;
             border-radius: 10px;
             transition: all 0.3s;
-            border: 1px solid #d0d0d0;
         }
 
         .service-section:hover {
-            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
             transform: translateY(-2px);
         }
 
         .service-title {
             font-size: 1.5em;
-            color: #1976d2;
+            color: #667eea;
             margin-bottom: 15px;
             padding-bottom: 10px;
-            border-bottom: 3px solid #1976d2;
+            border-bottom: 3px solid #667eea;
             font-weight: 600;
-        }
-
-        .pricing-info {
-            background: #fff9e6;
-            border: 2px solid #ffc107;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 8px;
-            font-weight: 600;
-            color: #333;
         }
 
         .service-category {
             font-weight: 600;
-            color: #424242;
+            color: #495057;
             margin-top: 15px;
             margin-bottom: 8px;
             font-size: 1.1em;
@@ -138,19 +126,19 @@
         li {
             padding: 8px 0 8px 25px;
             position: relative;
-            color: #424242;
+            color: #555;
         }
 
         li:before {
             content: "✓";
             position: absolute;
             left: 0;
-            color: #1976d2;
+            color: #667eea;
             font-weight: bold;
         }
 
         .price {
-            color: #d32f2f;
+            color: #e74c3c;
             font-weight: 700;
             font-size: 1.1em;
         }
@@ -168,7 +156,7 @@
         }
 
         .service-area {
-            background: linear-gradient(135deg, #4a4a4a 0%, #2a2a2a 100%);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             padding: 25px;
             border-radius: 10px;
@@ -198,17 +186,16 @@
         }
 
         .contact-info {
-            background: #f5f5f5;
+            background: #f8f9fa;
             padding: 25px;
             border-radius: 10px;
             margin-bottom: 30px;
             text-align: center;
-            border: 1px solid #d0d0d0;
         }
 
         .contact-info h3 {
             font-size: 1.5em;
-            color: #1976d2;
+            color: #667eea;
             margin-bottom: 15px;
         }
 
@@ -225,7 +212,7 @@
             padding: 15px 30px;
             border-radius: 10px;
             text-decoration: none;
-            color: #2a2a2a;
+            color: #333;
             font-weight: 600;
             font-size: 1.1em;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -233,48 +220,16 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            border: 2px solid #e0e0e0;
         }
 
         .contact-item:hover {
             transform: translateY(-3px);
-            box-shadow: 0 5px 20px rgba(25, 118, 210, 0.3);
-            color: #1976d2;
-            border-color: #1976d2;
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.3);
+            color: #667eea;
         }
 
         .icon {
             font-size: 1.3em;
-        }
-
-        .qr-codes {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-top: 20px;
-            flex-wrap: wrap;
-        }
-
-        .qr-code-item {
-            text-align: center;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            border: 2px solid #e0e0e0;
-        }
-
-        .qr-code-item img {
-            width: 150px;
-            height: 150px;
-            border-radius: 10px;
-            border: 2px solid #d0d0d0;
-        }
-
-        .qr-code-item p {
-            margin-top: 10px;
-            color: #424242;
-            font-weight: 600;
         }
 
         @media (max-width: 768px) {
@@ -296,9 +251,9 @@
 <body>
     <div class="container">
         <header>
-            <div class="site-name" id="site-name">本地到场生活辅助服务</div>
+            <div class="site-name" id="site-name">本地到场生活协助服务</div>
             <h1 id="main-title">服务项目列表</h1>
-            <p class="subtitle" id="subtitle">专业、高效、贴心的生活辅助服务</p>
+            <p class="subtitle" id="subtitle">专业、高效、贴心的生活协助服务</p>
             <button class="lang-toggle" onclick="toggleLanguage()">English</button>
         </header>
 
@@ -307,10 +262,10 @@
             <div class="service-area">
                 <h3 id="area-title">📍 服务区域</h3>
                 <div class="areas">
-                    <span class="area-tag" id="area-1">大阪府</span>
-                    <span class="area-tag" id="area-2">兵库县</span>
-                    <span class="area-tag" id="area-3">京都府</span>
-                    <span class="area-tag" id="area-4">奈良县</span>
+                    <span class="area-tag">大阪府</span>
+                    <span class="area-tag">兵库县</span>
+                    <span class="area-tag">京都府</span>
+                    <span class="area-tag">奈良县</span>
                 </div>
             </div>
 
@@ -325,47 +280,26 @@
                         <span class="icon">✉️</span> siolyjow@gmail.com
                     </a>
                 </div>
-                <div class="qr-codes">
-                    <div class="qr-code-item">
-                        <img src="4098.JPG" alt="WeChat QR Code">
-                        <p id="qr-wechat">扫描后用微信对话</p>
-                    </div>
-                    <div class="qr-code-item">
-                        <img src="4097.JPG" alt="LINE QR Code">
-                        <p id="qr-line">扫描后用LINE对话</p>
-                    </div>
-                </div>
             </div>
-
             <!-- 中文版 -->
             <div id="cn-content">
                 <div class="notice">
-                    <p><strong>服务说明:</strong> 本服务包含家庭协助、轻型搬运、旅客与留学生支持,以及基础短视频制作协助。不涉及任何需要专业资格或执照的作业,亦不构成搬家公司、家政公司或专业内容制作机构服务。所有服务内容需事前确认,如现场判断存在安全、法律或责任风险,有权中止服务以确保双方安全。</p>
-                    <p style="margin-top: 10px;"><strong>计费方式:</strong> 本服务按小时计费,所含费用不仅为作业时间,亦包含现场判断、风险回避及沟通协调等综合协助。</p>
+                    <p><strong>服务说明：</strong>本服务包含家庭协助、轻型搬运、旅客与留学生支持，以及基础短视频制作协助。不涉及任何需要专业资格或执照的作业，亦不构成搬家公司、家政公司或专业内容制作机构服务。所有服务内容需事前确认，如现场判断存在安全、法律或责任风险，有权中止服务以确保双方安全。</p>
+                    <p style="margin-top: 10px;"><strong>计费方式：</strong>本服务按小时计费，所含费用不仅为作业时间，亦包含现场判断、风险回避及沟通协调等综合协助。</p>
                 </div>
 
                 <div class="service-section">
-                    <h2 class="service-title">一、家具协助</h2>
-                    <div class="pricing-info">出勤费 + 超出部分 = 总价</div>
+                    <h2 class="service-title">一、家具协助 <span class="price">9000円/小时</span></h2>
                     <ul>
-                        <li>家具组装/拆卸（桌、椅、柜、架等）
-                            <div class="pricing-info">出勤费 9000円（含90分钟）超出部分：3000円/30分钟</div>
-                        </li>
-                        <li>家具重新组装
-                            <div class="pricing-info">出勤费 9000円（含90分钟）超出部分：3000円/30分钟</div>
-                        </li>
-                        <li>家具位置调整
-                            <div class="pricing-info">出勤费 9000円（含90分钟）超出部分：3000円/30分钟</div>
-                        </li>
+                        <li>家具组装/拆卸（桌、椅、柜、架等）</li>
+                        <li>家具重新组装</li>
+                        <li>家具位置调整</li>
                     </ul>
                 </div>
 
                 <div class="service-section">
-                    <h2 class="service-title">二、家庭清洁与整理</h2>
-                    <div class="pricing-info">
-                        <p>客户自备清洁用具：出勤费 9000円（含90分钟）超出部分：3000円/30分钟</p>
-                        <p style="margin-top: 8px;">客户不提供清洁用具：出勤费 15000円（含90分钟）超出部分：3000円/30分钟</p>
-                    </div>
+                    <h2 class="service-title">二、家庭清洁与整理 <span class="price">9000円/小时</span></h2>
+                    <p style="color: #e74c3c; font-weight: 600; margin-bottom: 10px;">（客户自备清洁用具）</p>
                     
                     <div class="service-category">【基础清洁】</div>
                     <ul>
@@ -399,25 +333,24 @@
                 </div>
 
                 <div class="service-section">
-                    <h2 class="service-title">三、生活协助/杂务帮忙</h2>
-                    <div class="pricing-info">出勤费 9000円（含90分钟）超出部分：3000円/30分钟</div>
+                    <h2 class="service-title">三、生活协助/杂务帮忙 <span class="price">9000円/小时</span></h2>
                     <ul>
                         <li>倒垃圾（按当地规则）</li>
                         <li>简单收纳与整理</li>
-                        <li>轻物品搬运（&lt;20kg纸箱、小件）</li>
+                        <li>轻物品搬运（<20kg纸箱、小件）</li>
                         <li>代取快递、简单代办</li>
                         <li>家庭日常杂务协助</li>
                     </ul>
 
                     <div class="service-category">【陪同协助】</div>
                     <ul>
-                        <li>陪同前往附近超市或事务地点（不涉及医疗、法律或官方代理行为）</li>
+                        <li>陪同前往附近超市或事务地点</li>
+                        <li>不涉及医疗、法律或官方代理行为</li>
                     </ul>
                 </div>
 
                 <div class="service-section">
-                    <h2 class="service-title">四、简易安装与小修补</h2>
-                    <div class="pricing-info">出勤费 9000円（含90分钟）超出部分：2000円/30分钟</div>
+                    <h2 class="service-title">四、简易安装与小修补 <span class="price">9000円/小时</span></h2>
                     
                     <div class="service-category">【简易安装】</div>
                     <ul>
@@ -434,8 +367,7 @@
                 </div>
 
                 <div class="service-section">
-                    <h2 class="service-title">五、轻型搬运（非搬家公司服务）</h2>
-                    <div class="pricing-info">出勤费 9000円（含90分钟）超出部分：3000円/30分钟</div>
+                    <h2 class="service-title">五、轻型搬运（非搬家公司服务） <span class="price">9000円/小时</span></h2>
                     
                     <div class="service-category">【家庭轻搬运】</div>
                     <ul>
@@ -446,13 +378,13 @@
 
                     <div class="service-category">【不包含】</div>
                     <ul>
-                        <li>冰箱、洗衣机、钢琴、保险柜等,以及单件重量超过30KG的重物</li>
+                        <li>冰箱、洗衣机、钢琴、保险柜等重物</li>
+                        <li>搬家公司级别运输</li>
                     </ul>
                 </div>
 
                 <div class="service-section">
-                    <h2 class="service-title">六、季节性与室外轻杂活</h2>
-                    <div class="pricing-info">出勤费 9000円（含90分钟）超出部分：3000円/30分钟</div>
+                    <h2 class="service-title">六、季节性与室外轻杂活 <span class="price">9000円/小时</span></h2>
                     <ul>
                         <li>院子清扫</li>
                         <li>落叶清理</li>
@@ -463,10 +395,9 @@
                 </div>
 
                 <div class="service-section">
-                    <h2 class="service-title">七、旅客/留学生轻型协助服务</h2>
-                    <div class="pricing-info">出勤费 9000円（含90分钟）超出部分：3000円/30分钟</div>
+                    <h2 class="service-title">七、旅客/留学生轻型协助服务 <span class="price">9000円/小时</span></h2>
                     
-                    <div class="service-category">【行李箱搬运】（车辆使用费 200円/公里）</div>
+                    <div class="service-category">【行李箱搬运】</div>
                     <ul>
                         <li>行李箱搬运（单个或多个）</li>
                         <li>车站 ⇄ 住所</li>
@@ -486,8 +417,7 @@
                 </div>
 
                 <div class="service-section">
-                    <h2 class="service-title">八、行政与文书体力型协助</h2>
-                    <div class="pricing-info">出勤费 9000円（含90分钟）超出部分：3000円/30分钟</div>
+                    <h2 class="service-title">八、行政与文书体力型协助 <span class="price">9000円/小时</span></h2>
                     <ul>
                         <li>纸质文件分类、装订</li>
                         <li>文件装箱</li>
@@ -496,22 +426,20 @@
                 </div>
 
                 <div class="service-section">
-                    <h2 class="service-title">九、电子设备基础协助</h2>
-                    <div class="pricing-info">出勤费 5000円（含90分钟）超出部分：2000円/30分钟</div>
+                    <h2 class="service-title">九、电子设备基础协助（非技术服务） <span class="price">9000円/小时</span></h2>
                     <ul>
                         <li>扫描纸质文件</li>
                         <li>照片与文件整理</li>
                         <li>智能电视、蓝牙设备基础设置</li>
                         <li>电脑、打印机等基础安装</li>
-                        <li>Wi-Fi路由器摆放与连接（不布线）</li>
+                        <li>Wi-Fi 路由器摆放与连接（不布线）</li>
                     </ul>
                 </div>
 
                 <div class="service-section">
-                    <h2 class="service-title">十、短视频拍摄/剪辑</h2>
+                    <h2 class="service-title">十、短视频拍摄/剪辑 <span class="price">9000円/小时</span></h2>
                     
                     <div class="service-category">【短视频拍摄】</div>
-                    <div class="pricing-info">出勤费 9000円（含90分钟）超出部分：3000円/30分钟</div>
                     <ul>
                         <li>使用手机进行短视频拍摄</li>
                         <li>室内场景拍摄（产品、空间、人物等）</li>
@@ -520,7 +448,6 @@
                     </ul>
 
                     <div class="service-category">【短视频剪辑】</div>
-                    <div class="pricing-info">8000円/个</div>
                     <ul>
                         <li>基础剪辑、转场</li>
                         <li>字幕添加（客户提供文字）</li>
@@ -538,27 +465,17 @@
                 </div>
 
                 <div class="service-section">
-                    <h2 class="service-title">1. Furniture Assistance</h2>
-                    <div class="pricing-info">Call-out Fee + Overtime = Total Price</div>
+                    <h2 class="service-title">1. Furniture Assistance <span class="price">9000¥/hour</span></h2>
                     <ul>
-                        <li>Furniture assembly/disassembly (tables, chairs, cabinets, shelves, etc.)
-                            <div class="pricing-info">Call-out fee: 9000¥ (includes 90 min) Overtime: 3000¥/30 min</div>
-                        </li>
-                        <li>Furniture reassembly
-                            <div class="pricing-info">Call-out fee: 9000¥ (includes 90 min) Overtime: 3000¥/30 min</div>
-                        </li>
-                        <li>Furniture repositioning
-                            <div class="pricing-info">Call-out fee: 9000¥ (includes 90 min) Overtime: 3000¥/30 min</div>
-                        </li>
+                        <li>Furniture assembly/disassembly (tables, chairs, cabinets, shelves, etc.)</li>
+                        <li>Furniture reassembly</li>
+                        <li>Furniture repositioning</li>
                     </ul>
                 </div>
 
                 <div class="service-section">
-                    <h2 class="service-title">2. Home Cleaning & Organization</h2>
-                    <div class="pricing-info">
-                        <p>Client provides cleaning supplies: Call-out fee 9000¥ (includes 90 min) Overtime: 3000¥/30 min</p>
-                        <p style="margin-top: 8px;">Client does not provide cleaning supplies: Call-out fee 15000¥ (includes 90 min) Overtime: 3000¥/30 min</p>
-                    </div>
+                    <h2 class="service-title">2. Home Cleaning & Organization <span class="price">9000¥/hour</span></h2>
+                    <p style="color: #e74c3c; font-weight: 600; margin-bottom: 10px;">(Client provides cleaning supplies)</p>
                     
                     <div class="service-category">【Basic Cleaning】</div>
                     <ul>
@@ -592,25 +509,24 @@
                 </div>
 
                 <div class="service-section">
-                    <h2 class="service-title">3. Life Assistance / Errand Help</h2>
-                    <div class="pricing-info">Call-out fee: 9000¥ (includes 90 min) Overtime: 3000¥/30 min</div>
+                    <h2 class="service-title">3. Life Assistance / Errand Help <span class="price">9000¥/hour</span></h2>
                     <ul>
                         <li>Taking out trash (following local rules)</li>
                         <li>Simple storage and organization</li>
-                        <li>Light item moving (&lt;20kg boxes, small items)</li>
+                        <li>Light item moving (<20kg boxes, small items)</li>
                         <li>Package pickup, simple errands</li>
                         <li>Daily household task assistance</li>
                     </ul>
 
                     <div class="service-category">【Accompanying Service】</div>
                     <ul>
-                        <li>Accompanying to nearby supermarkets or business locations (does not involve medical, legal, or official representation)</li>
+                        <li>Accompanying to nearby supermarkets or business locations</li>
+                        <li>Does not involve medical, legal, or official representation</li>
                     </ul>
                 </div>
 
                 <div class="service-section">
-                    <h2 class="service-title">4. Simple Installation & Minor Repairs</h2>
-                    <div class="pricing-info">Call-out fee: 9000¥ (includes 90 min) Overtime: 2000¥/30 min</div>
+                    <h2 class="service-title">4. Simple Installation & Minor Repairs <span class="price">9000¥/hour</span></h2>
                     
                     <div class="service-category">【Simple Installation】</div>
                     <ul>
@@ -627,8 +543,7 @@
                 </div>
 
                 <div class="service-section">
-                    <h2 class="service-title">5. Light Moving (Non-Moving Company Service)</h2>
-                    <div class="pricing-info">Call-out fee: 9000¥ (includes 90 min) Overtime: 3000¥/30 min</div>
+                    <h2 class="service-title">5. Light Moving (Non-Moving Company Service) <span class="price">9000¥/hour</span></h2>
                     
                     <div class="service-category">【Household Light Moving】</div>
                     <ul>
@@ -639,13 +554,13 @@
 
                     <div class="service-category">【Not Included】</div>
                     <ul>
-                        <li>Refrigerators, washing machines, pianos, safes, and items over 30KG per piece</li>
+                        <li>Heavy items such as refrigerators, washing machines, pianos, safes</li>
+                        <li>Moving company-level transportation</li>
                     </ul>
                 </div>
 
                 <div class="service-section">
-                    <h2 class="service-title">6. Seasonal & Outdoor Light Tasks</h2>
-                    <div class="pricing-info">Call-out fee: 9000¥ (includes 90 min) Overtime: 3000¥/30 min</div>
+                    <h2 class="service-title">6. Seasonal & Outdoor Light Tasks <span class="price">9000¥/hour</span></h2>
                     <ul>
                         <li>Yard cleaning</li>
                         <li>Leaf clearing</li>
@@ -656,10 +571,9 @@
                 </div>
 
                 <div class="service-section">
-                    <h2 class="service-title">7. Traveler / Student Light Assistance Service</h2>
-                    <div class="pricing-info">Call-out fee: 9000¥ (includes 90 min) Overtime: 3000¥/30 min</div>
+                    <h2 class="service-title">7. Traveler / Student Light Assistance Service <span class="price">9000¥/hour</span></h2>
                     
-                    <div class="service-category">【Luggage Moving】(Vehicle usage fee: 200¥/km)</div>
+                    <div class="service-category">【Luggage Moving】</div>
                     <ul>
                         <li>Luggage moving (single or multiple pieces)</li>
                         <li>Station ⇄ Residence</li>
@@ -679,8 +593,7 @@
                 </div>
 
                 <div class="service-section">
-                    <h2 class="service-title">8. Administrative & Document Physical Assistance</h2>
-                    <div class="pricing-info">Call-out fee: 9000¥ (includes 90 min) Overtime: 3000¥/30 min</div>
+                    <h2 class="service-title">8. Administrative & Document Physical Assistance <span class="price">9000¥/hour</span></h2>
                     <ul>
                         <li>Paper document sorting, binding</li>
                         <li>Document boxing</li>
@@ -689,8 +602,7 @@
                 </div>
 
                 <div class="service-section">
-                    <h2 class="service-title">9. Electronic Device Basic Assistance</h2>
-                    <div class="pricing-info">Call-out fee: 5000¥ (includes 90 min) Overtime: 2000¥/30 min</div>
+                    <h2 class="service-title">9. Electronic Device Basic Assistance (Non-Technical Service) <span class="price">9000¥/hour</span></h2>
                     <ul>
                         <li>Scanning paper documents</li>
                         <li>Photo and file organization</li>
@@ -701,10 +613,9 @@
                 </div>
 
                 <div class="service-section">
-                    <h2 class="service-title">10. Short Video Shooting / Editing</h2>
+                    <h2 class="service-title">10. Short Video Shooting / Editing <span class="price">9000¥/hour</span></h2>
                     
                     <div class="service-category">【Short Video Shooting】</div>
-                    <div class="pricing-info">Call-out fee: 9000¥ (includes 90 min) Overtime: 3000¥/30 min</div>
                     <ul>
                         <li>Short video shooting using mobile phone</li>
                         <li>Indoor scene shooting (products, spaces, people, etc.)</li>
@@ -713,7 +624,6 @@
                     </ul>
 
                     <div class="service-category">【Short Video Editing】</div>
-                    <div class="pricing-info">8000¥/video</div>
                     <ul>
                         <li>Basic editing, transitions</li>
                         <li>Subtitle addition (client provides text)</li>
@@ -748,28 +658,16 @@
                 document.getElementById('site-name').textContent = 'Local Support';
                 document.getElementById('area-title').textContent = '📍 Service Area';
                 document.getElementById('contact-title').textContent = '📞 Contact';
-                document.getElementById('area-1').textContent = 'Osaka';
-                document.getElementById('area-2').textContent = 'Hyogo';
-                document.getElementById('area-3').textContent = 'Kyoto';
-                document.getElementById('area-4').textContent = 'Nara';
-                document.getElementById('qr-wechat').textContent = 'Scan to chat via WeChat';
-                document.getElementById('qr-line').textContent = 'Scan to chat via LINE';
                 currentLang = 'en';
             } else {
                 enContent.classList.add('hidden');
                 cnContent.classList.remove('hidden');
                 langBtn.textContent = 'English';
                 mainTitle.textContent = '服务项目列表';
-                subtitle.textContent = '专业、高效、贴心的生活辅助服务';
-                document.getElementById('site-name').textContent = '本地到场生活辅助服务';
+                subtitle.textContent = '专业、高效、贴心的生活协助服务';
+                document.getElementById('site-name').textContent = '本地到场生活协助服务';
                 document.getElementById('area-title').textContent = '📍 服务区域';
                 document.getElementById('contact-title').textContent = '📞 联系方式';
-                document.getElementById('area-1').textContent = '大阪府';
-                document.getElementById('area-2').textContent = '兵库县';
-                document.getElementById('area-3').textContent = '京都府';
-                document.getElementById('area-4').textContent = '奈良县';
-                document.getElementById('qr-wechat').textContent = '扫描后用微信对话';
-                document.getElementById('qr-line').textContent = '扫描后用LINE对话';
                 currentLang = 'cn';
             }
         }
